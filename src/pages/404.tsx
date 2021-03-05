@@ -1,5 +1,7 @@
-const NotFound: React.FC = () => {
-  return <h1>Not Found</h1>;
-};
-
-export default NotFound;
+export default function NotFound() {
+  return (
+    <div>
+      <h1>NOT FOUND</h1>
+    </div>
+  )
+}

@@ -2,9 +2,14 @@ import { AppProps } from 'next/app'
 
 import '../styles/tailwind.css'
 import '../styles/globals.css'
+import Layout from '../components/Layout'
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  )
 }
 
 export default MyApp

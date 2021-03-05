@@ -25,12 +25,9 @@ module.exports = {
         'plugin:react/recommended', // React rules
         'plugin:react-hooks/recommended', // React hooks rules
         'plugin:jsx-a11y/recommended', // Accessibility rules
-        'prettier/@typescript-eslint', // Prettier plugin
-        'plugin:prettier/recommended', // Prettier recommended rules
+        'plugin:prettier/recommended', // Prettier plugin
       ],
       rules: {
-
-        'prettier/prettier': ['error', {}, { usePrettierrc: true }],
         // We will use TypeScript's types for component props instead
         'react/prop-types': 'off',
 
@@ -40,20 +37,19 @@ module.exports = {
         // This rule is not compatible with Next.js's <Link /> components
         'jsx-a11y/anchor-is-valid': 'off',
 
-        '@typescript-eslint/explicit-module-boundary-types': 'off',
-        '@typescript-eslint/explicit-function-return-type': 'off',
-
         // Why would you want unused vars?
         '@typescript-eslint/no-unused-vars': ['error'],
 
+        'prettier/prettier': ['error', {}, { usePrettierrc: true }], // Includes .prettierrc.js rules
+
         // I suggest this setting for requiring return types on functions only where useful
-        // '@typescript-eslint/explicit-function-return-type': [
-        //   'warn',
-        //   {
-        //     allowExpressions: true,
-        //     allowConciseArrowFunctionExpressionsStartingWithVoid: true,
-        //   },
-        // ],
+        '@typescript-eslint/explicit-function-return-type': [
+          'warn',
+          {
+            allowExpressions: true,
+            allowConciseArrowFunctionExpressionsStartingWithVoid: true,
+          },
+        ],
       },
     },
   ],
