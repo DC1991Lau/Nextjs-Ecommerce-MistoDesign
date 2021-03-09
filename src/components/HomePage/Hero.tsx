@@ -1,4 +1,4 @@
-import Banner from '../Banner'
+import Banner from './Banner'
 import Block from '../Block'
 import Container from '../Container'
 import Advantage from './Advantage'
@@ -10,10 +10,10 @@ const Hero: React.FC = () => {
         <Banner bcgdImg="bg-hero-1" />
         <div className="grid grid-rows-2 gap-4 ">
           <div className="grid grid-cols-2 gap-4">
-            <Block bckImg="bg-hero-2" />
-            <Block bckImg="bg-hero-4" />
+            <Block src="/categories/women" title="WOMEN" bckImg="bg-hero-2" />
+            <Block src="/categories/men" title="MEN" bckImg="bg-hero-4" />
           </div>
-          <Block bckImg="bg-hero-3" />
+          <Block src="/categories/accessories" title="ACCESSORIES" bckImg="bg-hero-3" />
         </div>
       </div>
       <Advantage />

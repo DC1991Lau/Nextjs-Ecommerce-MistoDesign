@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { NextPage } from 'next'
 import SubscribeForm from '../components/HomePage/SubscribeForm'
-import BlogContainer from '../components/HomePage/Blog'
+import BlogContainer from '../components/HomePage/Blog/BlogContainer'
 import Hero from '../components/HomePage/Hero'
 import WomensList from '../components/HomePage/WomensList'
 import MensList from '../components/HomePage/MensList'

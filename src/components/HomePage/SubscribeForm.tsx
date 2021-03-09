@@ -1,3 +1,4 @@
+import Button from '../Button'
 import Container from '../Container'
 
 const SubscribeForm: React.FC = () => {
@@ -15,9 +16,9 @@ const SubscribeForm: React.FC = () => {
             placeholder="Enter your email"
             className="placeholder-grey py-4 px-4 w-full focus:outline-none"
           />
-          <button type="submit" className="w-full mt-6 py-4 text-center bg-dark text-gr_white">
+          <Button type="submit" className="mt-6 bg-dark text-gr_white">
             SUBSCRIBE
-          </button>
+          </Button>
         </form>
       </Container>
     </div>

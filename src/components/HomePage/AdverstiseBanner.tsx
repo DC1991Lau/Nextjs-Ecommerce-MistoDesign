@@ -1,4 +1,4 @@
-import Banner from '../Banner'
+import Banner from './Banner'
 import Container from '../Container'
 
 const AdverstiseBanner: React.FC = () => {

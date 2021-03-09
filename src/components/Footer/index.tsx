@@ -7,31 +7,31 @@ import {
   RiPinterestFill,
   RiTwitterFill,
 } from 'react-icons/ri'
-import Container from './Container'
+import Container from '../Container'
 
 const Footer: React.FC = () => {
   return (
-    <footer>
+    <footer className="">
       <div className="bg-dark">
         <Container className="text-white py-3">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col md:flex-row items-center md:justify-between ">
             <p className="text-subtitle tracking-widest">BE IN TOUCH WITH US:</p>
 
-            <form className="flex">
+            <form className="flex flex-col md:flex-row items-center justify-center md:flex  mt-3 md:mt-0">
               <input
                 type="text"
                 placeholder="Enter your email"
-                className="bg-white placeholder-dark flex-1 px-6"
+                className="bg-white placeholder-dark px-6 mx-auto text-center"
               />
               <button
                 type="submit"
-                className="border border-white text-bt px-6 py-2 tracking-widest ml-3"
+                className="border border-white text-bt px-6 py-2 tracking-widest md:ml-3 mt-3 md:mt-0"
               >
                 JOIN US
               </button>
             </form>
 
-            <div className="flex space-x-2">
+            <div className="flex space-x-2 mt-3 md:mt-0">
               <RiFacebookCircleFill size={14} />
               <RiTwitterFill size={14} />
               <RiInstagramFill size={14} />
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
           </div>
         </Container>
       </div>
-      <Container>
+      <Container className="hidden md:block">
         <div className="grid grid-cols-4 mt-10 mb-9 w-full">
           <ul>
             <li className="text-subtitle font-semibold mb-4">CATEGORIES</li>
@@ -87,9 +87,9 @@ const Footer: React.FC = () => {
       </Container>
       <div className="bg-grey py-3">
         <Container className="">
-          <div className="flex justify-between items-center">
-            <p className="text-sm">Copyright © 2032 all rights reserved</p>
-            <div>
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-sm mb-3 md:mb-0">Copyright © 2032 all rights reserved</p>
+            <div className="mb-3 md:mb-0">
               <Image src="/img/payments.png" height={16} width={381} />
             </div>
             <p className="text-sm">

@@ -5,7 +5,12 @@ module.exports = {
     height: {
       'heroxl':'490px',
       'min_block':'260px',
-      'full':'100%'
+      'full':'100%',
+      '40px' : '40px',
+
+     },
+     maxHeight: {
+      '560px' : '560px'
      },
     fontSize: {
       'bt': '.813rem',
@@ -63,7 +68,12 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      fontWeight:['hover', 'active', 'focus'],
+      borderWidth:['hover'],
+      borderColor:['active'],
+      opacity: ['hover']
+    },
   },
   plugins: [],
 }
